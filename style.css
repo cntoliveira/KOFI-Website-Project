@@ -1,69 +1,178 @@
-/* Carousel Size */
+/* Ajustes globais para body e html */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Carousel */
 .carouselImage {
-    height: 82vh;
+    width: 100%;
+    max-height: 82vh; /* Define uma altura máxima sem extrapolar */
     object-fit: cover;
 }
+
 /* h2 Style */
 #wwa h2 {
     margin: 1rem;
     text-align: center;
 }
-/* Body Size */
-body {
-    height: 3000px;
-}
-/* h2 position */
+
+/* Ajuste de layout para #wwa */
 #wwa {
     display: inline-block;
-    width: 98vw;
+    width: 100%; /* Ajusta a seção para ocupar toda a largura */
 }
-#textbreak{
+
+#textbreak {
     display: flex;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste e se empilhe */
+    justify-content: center; /* Centraliza o conteúdo */
 }
-/* Text wwa */
-.wwatext{
+
+/* Ajustes para texto e layout no mobile */
+.wwatext {
     font-size: 1rem;
     width: 32vw;
     margin: 1rem;
     display: block;
 }
-/* Img Size Group*/
-#imgroupn{
+
+@media (max-width: 768px) {
+    .wwatext {
+        width: 90vw; /* Texto ocupa 90% da largura em telas menores */
+        margin: 1rem auto; /* Centraliza o texto */
+    }
+}
+
+/* Imagem de grupo */
+#imgroupn {
     width: 28vw;
     box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.719);
 }
-/* Bar Style*/
-.division{
-    background-color: rgb(255, 255, 255); /* Temporariamente vermelho para teste */
+
+@media (max-width: 768px) {
+    #imgroupn {
+        width: 90vw; /* Imagem se ajusta no mobile */
+        margin: 1rem auto;
+    }
+}
+
+/* Estilos de divisão */
+.division {
+    background-color: rgb(255, 255, 255);
     height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-/* Icon Bar Size */
-.division-icon {
-    height: 36px;
-    margin: auto;
 }
-#chgsecc h2{
+
+/* Ajustes para curiosidades e listas */
+#chgsecc h2 {
     margin: 1rem;
     margin-top: 5rem;
 }
 
-#listkofi{
+#listkofi {
     margin: 1rem;
 }
 
-.linedivision{
+.linedivision {
     margin-top: 7rem;
     height: 7px;
     background-color: rgb(0, 0, 0);
 }
 
-#beancfi{
-    margin-left: 50rem;
+/* Ajustes para o footer e imagem de fundo */
+#beancfi {
+    display: block;
+    margin: 2rem auto; /* Centraliza a imagem */
     height: 64vh;
     width: 64vh;
-    
+}
+
+@media (max-width: 768px) {
+    #beancfi {
+        width: 40vh; /* Reduz o tamanho no mobile */
+        height: auto;
+    }
+}
+
+/* Ajustes de fontes e layout no mobile */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem; /* Reduz tamanho de h2 em dispositivos móveis */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #textbreak {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wwatext, #listkofi {
+        margin: 1rem auto; /* Centraliza as listas */
+    }
+
+    .linedivision {
+        margin-top: 2rem; /* Reduz o espaço vertical */
+    }
+}
+/* Container usando Flexbox */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* As caixas quebram linha quando necessário */
+    padding: 20px;
+}
+
+/* Estilos para as caixas */
+.boxcoffee{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:17rem; /* Largura das caixas */
+    min-height: 300px; /* Altura mínima para garantir um layout consistente */
+    padding: 15px;
+    text-align: center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    justify-content: space-between; /* Espaça o conteúdo de forma equilibrada */
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Estilos para as imagens */
+.styleimg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Garante que a imagem mantenha a proporção */
+    max-height: 150px; /* Limite máximo de altura para não extrapolar a caixa */
+}
+
+/* Estilos para a descrição */
+.description {
+    margin-top: 10px;
+}
+
+.description h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.description p {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 0;
 }
