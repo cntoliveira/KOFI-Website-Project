@@ -1,69 +1,188 @@
-/* Carousel Size */
-.carouselImage {
-    height: 82vh;
+/* Estilos gerais para computador */
+.carousel-item {
+    height: 82vh; /* Mantém altura para telas grandes */
     object-fit: cover;
 }
-/* h2 Style */
-#wwa h2 {
+
+/* Estilo do h2 */
+#wwa h2, #chgsecc h2, #tpsofcof h2{
     margin: 1rem;
     text-align: center;
 }
-/* Body Size */
+
+/* Corpo da página */
 body {
-    height: 3000px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    font-family: 'Arial', sans-serif; /* Define uma fonte básica */
+    min-height: 100vh;
+    flex-direction: column;
 }
-/* h2 position */
+
+/* Seção WWA */
 #wwa {
     display: inline-block;
     width: 98vw;
 }
-#textbreak{
+
+#textbreak {
     display: flex;
+    justify-content: space-between; /* Alinha o texto e a imagem horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se necessário */
 }
-/* Text wwa */
-.wwatext{
+
+/* Texto WWA */
+.wwatext {
     font-size: 1rem;
-    width: 32vw;
+    width: 32vw; /* Largura adequada para telas grandes */
     margin: 1rem;
-    display: block;
 }
-/* Img Size Group*/
-#imgroupn{
-    width: 28vw;
+
+/* Imagem de grupo */
+#imgroupn {
+    width: 28vw; /* Proporção adequada para telas grandes */
     box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.719);
+    object-fit: cover; /* Ajusta a imagem sem distorção */
 }
-/* Bar Style*/
-.division{
-    background-color: rgb(255, 255, 255); /* Temporariamente vermelho para teste */
-    height: 6vh;
+
+/* Seção Curiosidades */
+#chgsecc {
+    padding: 0 1.5rem;
+}
+
+#chgsecc h2 {
+    margin-bottom: 1rem; /* Menos margem inferior no título */
+}
+
+#curiosities-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Alinha a lista à esquerda e a imagem à direita */
+    align-items: flex-start;
+    gap: 1rem; /* Espaçamento entre a lista e a imagem */
+}
+
+/* Lista de curiosidades */
+#listkofi {
+    width: 100%; /* Define a largura da lista */
+    text-align: left; /* Alinha o texto da lista à esquerda */
+}
+
+/* Imagem de curiosidades */
+#imgcustyle {
+    width: 290px; /* Largura fixa para telas grandes */
+    height: 290px; /* Altura fixa para telas grandes */
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.719); /* Sombra na imagem */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+
+/* Container principal */
+.main-container {
+    flex: 1; /* Faz com que o container principal ocupe o espaço restante disponível */
+}
+
+/* Rodapé */
+footer {
+    background-color: #a79c9c; /* Fundo escuro */ 
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento no topo e embaixo */
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+footer p {
+    margin: 0; /* Remove espaçamento extra */
+    font-size: 14px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff; /* Cor branca nos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+/* Ajustar carrossel em dispositivos móveis */
+.carousel-item {
+    height: 50vh; /* Altura reduzida para telas pequenas */
+}
+
+/* Ajustar layout do texto e imagem no WWA */
+#textbreak {
+    flex-direction: column; /* Alinha verticalmente em telas pequenas */
+    align-items: center; /* Centraliza elementos */
+}
+
+/* Texto menor para dispositivos móveis */
+.wwatext {
+    font-size: 0.9rem;
+    width: 85vw; /* Aumentar a largura do texto em telas menores */
+}
+
+/* Imagem responsiva */
+#imgroupn {
+    width: 80vw; /* Aumentar largura da imagem em telas pequenas */
+}
+
+/* Ajustar margens e tamanhos */
+    h2 {
+    font-size: 1.5rem;
+}
+
+/* Layout da seção Curiosidades */
+#curiosities-content {
+    flex-direction: column; /* Empilha verticalmente em telas pequenas */
+    align-items: center; /* Centraliza elementos */
+    gap: 1rem; /* Espaço entre a lista e a imagem */
+    }
+
+#listkofi {
+    width: 100%; /* Largura total disponível em telas pequenas */
+    margin-right: 0; /* Remove margem direita quando empilhado */
+    }
+
+#imgcustyle {
+    width: 100%; /* Aumenta a largura para ocupar 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    max-width: 300px; /* Define um limite máximo de largura para evitar que a imagem fique muito grande */
+    }
+}
+#tpsofcof {
+    margin: 1rem;
   }
-
-/* Icon Bar Size */
-.division-icon {
-    height: 36px;
-    margin: auto;
-}
-#chgsecc h2{
-    margin: 1rem;
-    margin-top: 5rem;
-}
-
-#listkofi{
-    margin: 1rem;
-}
-
-.linedivision{
-    margin-top: 7rem;
-    height: 7px;
-    background-color: rgb(0, 0, 0);
-}
-
-#beancfi{
-    margin-left: 50rem;
-    height: 64vh;
-    width: 64vh;
-    
-}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaço entre os itens */
+  }
+  
+.item {
+    flex: 1 1 250px; /* Cresce e encolhe, com largura mínima de 250px */
+    max-width: 350px; /* Largura máxima para evitar que cresçam demais */
+    background: #aa702da4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+  }
+  
+h4 {
+    margin-top: 0;
+  }
+  
+p {
+    margin: 0;
+  }
+  
+  

@@ -1,176 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOFI</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/naviconkofi.png"
-            alt="Logo"
-            width="64"
-            height="64"
-            class="d-inline-block align-text-center"
-          />
-        </a>
-        <a class="navbar-brand" href="#">KOFI</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Curiosities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Coffee</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Carousel -->
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="assets/imgcoffee1.jpg"
-            class="carouselImage d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assets/imgcoffee2.jpg"
-            class="carouselImage d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assets/imgcoffee3.jpg"
-            class="carouselImage d-block w-100"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Carousel Division-->
-    <div class="division">
-      <img src="/assets/naviconkofi.png" alt="icon" class="division-icon" />
-    </div>
-    <!-- Section -->
-    <section id="wwa">
-      <h2>Who We Are</h2>
-      <div id="textbreak">
-        <p class="wwatext">
-          Who We Are Welcome to our coffee haven! Since 2024, we have been your
-          go-to source for everything coffee-related. We are passionate about
-          bringing you the finest coffee experiences, whether you're a casual
-          drinker or a true aficionado. Our journey started with a simple love
-          for coffee and a desire to share that passion with the world. We've
-          carefully curated a selection of premium beans from around the globe,
-          expert brewing guides, and insider tips to help you discover new
-          flavors and perfect your coffee ritual.
-        </p>
-        <p class="wwatext">
-          At the heart of what we do is a commitment to quality, sustainability,
-          and community. We work closely with ethical producers to ensure that
-          every cup you enjoy is not only delicious but also responsibly
-          sourced. Whether you're looking for the perfect roast, the latest
-          brewing equipment, or just some inspiration, we've got you covered.
-          Join us on this journey and elevate your coffee experience. Here's to
-          many more years of great coffee and even better connections!
-        </p>
-        <img id="imgroupn" src="assets/imggroup.jpg" alt="Group Image" />
-      </div>
-      <hr class="linedivision" />
-    </section>
-    <section id="chgsecc">
-      <h2>Curiosities</h2>
-      <div id="listkofi">
-        <ul>
-          <li>Coffee is a fruit</li>
-          <li>Brazil grows the most coffee in the world</li>
-          <li>Decaf does not mean no caffeine</li>
-          <li>Coffee has already been banned</li>
-          <li>Coffee goes back a really long way</li>
-          <li>Coffee helped Brazil go to the Olympics</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KOFI - Sua fonte para tudo sobre café. Experimente os melhores cafés e descubra curiosidades interessantes." />
+  <title>KOFI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/naviconkofi.png" alt="Logo KOFI" width="64" height="64" class="d-inline-block align-text-center" />
+      </a>
+      <a class="navbar-brand" href="/">KOFI</a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#wwa">Who We Are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chgsecc">Curiosities</a>
+          </li>
         </ul>
       </div>
-    </section>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/imgcoffee1.jpg" class="d-block w-100" alt="Coffee Image 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imgcoffee2.jpg" class="d-block w-100" alt="Coffee Image 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imgcoffee3.jpg" class="d-block w-100" alt="Coffee Image 3" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Carousel Division -->
+  <div class="division text-center">
+    <img src="assets/naviconkofi.png" alt="icon" class="img-fluid" style="height: 40px; width:40px; margin-top: 4px;" />
+  </div>
+  <hr style="margin-top: 1px;">
+  <!-- Seção Who We Are -->
+  <section id="wwa">
+    <h2>Who We Are</h2>
+    <div id="textbreak">
+      <p class="wwatext">
+        Welcome to our coffee haven! Since 2024, we have been your go-to source for everything coffee-related. We are passionate about bringing you the finest coffee experiences, whether you're a casual drinker or a true aficionado. Our journey started with a simple love for coffee and a desire to share that passion with the world. We created this website with the principal objective of sharing curiosities about coffee. Here, you'll find fascinating insights into the world of coffee, from the origins of different beans to unique brewing techniques.
+      </p>
+      <p class="wwatext">
+        Our goal is to inspire and inform coffee enthusiasts, helping you discover new aspects of your favorite beverage. Explore and enjoy the rich tapestry of coffee culture with us!Here, you'll discover the stories behind different coffee varieties, learn about the latest trends in coffee culture, and find creative ways to enjoy your daily cup. Our goal is to inspire and engage coffee enthusiasts of all levels, whether you're a seasoned barista or a casual drinker. Explore with us and elevate your coffee experience with knowledge and appreciation!"
+      </p>
+      <img id="imgroupn" src="assets/imggroup.jpg" alt="Group Image" />
+    </div>
+    <hr/>
+  </section>
+
+  <!-- Seção Curiosidades -->
+  <section id="chgsecc">
+    <h2>Curiosities</h2>
+    <div id="curiosities-content">
+      <div id="listkofi">
+        <ul>
+          <li>Coffee is a fruit.</li>
+          <li>Brazil grows the most coffee in the world.</li>
+          <li>Decaf does not mean no caffeine.</li>
+          <li>Coffee has already been banned.</li>
+          <li>Coffee goes back a really long way.</li>
+          <li>Coffee helped Brazil go to the Olympics.</li>
+          <li>The most expensive coffee in the world costs $600 per pound.</li>
+          <li>Coffee beans are green when they are picked.</li>
+          <li>The caffeine found in coffee beans is naturally bitter.</li>
+        </ul>
+      </div>
+      <div>
+        <img id="imgcustyle" src="assets/curiositiesimg.png" alt="Curiosities Image" />
+      </div>
+    </div>
+    <hr/>
+  </section>
+  <section id="tpsofcof">
+    <h2>Types Of Coffee</h2>
+    <div class="container">
+      <div class="item">
+        <h4>American Coffee</h4>
+        <p>At the heart of what we do is a commitment to quality, sustainability, and community. We work closely with ethical producers to ensure that every cup you enjoy is not only delicious but also responsibly sourced. Whether you're looking for the perfect roast, the latest brewing equipment, or just some inspiration, we've got you covered.</p>
+      </div>
+      <div class="item">
+        <h4>Espresso</h4>
+        <p>Espresso is a concentrated form of coffee served in small, strong shots. It's the foundation for many coffee drinks and is known for its rich flavor and intense caffeine kick. Our espresso is made from high-quality beans and is brewed to perfection, offering a bold and invigorating experience.</p>
+      </div>
+      <div class="item">
+        <h4>Latte</h4>
+        <p>A latte is a creamy coffee drink made with espresso and steamed milk. It's a popular choice for those who enjoy a smoother, milkier coffee experience. Our lattes are crafted with care, ensuring a perfect balance of strong coffee flavor and silky milk texture.</p>
+      </div>
+      <div class="item">
+        <h4>Cappuccino</h4>
+        <p>Cappuccino is a classic Italian coffee drink made with equal parts espresso, steamed milk, and frothed milk. It has a rich, bold flavor balanced with creamy, frothy milk. Perfect for those who enjoy a strong coffee with a velvety texture.</p>
+      </div>
+      <div class="item">
+        <h4>Macchiato</h4>
+        <p>Macchiato is an espresso "stained" or "marked" with a small amount of steamed milk. It's a strong, bold coffee with just a hint of milk, ideal for those who prefer a more intense coffee flavor.</p>
+      </div>
+      <div class="item">
+        <h4>Mocha</h4>
+        <p>Mocha combines rich espresso with chocolate syrup and steamed milk, topped with whipped cream. It's a delightful blend of coffee and chocolate for those who love a sweet and indulgent drink.</p>
+      </div>
+      <div class="item">
+        <h4>Cortado</h4>
+        <p>Cortado is a Spanish coffee drink made by adding a small amount of warm milk to a shot of espresso. It offers a balanced coffee flavor with a creamy texture, ideal for those who enjoy a strong but slightly milder coffee experience.</p>
+      </div>
+      <div class="item">
+        <h4>Affogato</h4>
+        <p>Affogato is a delicious Italian dessert that combines a shot of hot espresso poured over a scoop of vanilla ice cream. The contrast between the hot coffee and cold ice cream creates a delightful mix of flavors and textures.</p>
+      </div>            
+    </div>
+  </section>
+  <hr>
+  <!-- Footer -->
   <footer>
-      <img id="beancfi" src="assets/beancoffee.png" alt="Coffee Beans" />
-  
-  </footer>
-    <!-- Scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <p>&copy; 2024 Coffee Lovers. All rights reserved.</p>
+    <div class="social-links">
+        <a href="/">Home</a> | 
+        <a href="#chsecc">Curiosities</a> | 
+        <a href="#wwa">Who We Are</a>
+    </div>
+</footer>  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
 </html>
