@@ -23,8 +23,10 @@ body {
 /* Seção WWA */
 #wwa {
     display: inline-block;
-    width: 98vw;
+    width: 100%; /* Ajusta a seção para ocupar toda a largura */
 }
+
+#textbreak {
 
 #textbreak {
     display: flex;
