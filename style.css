@@ -25,9 +25,6 @@ body {
     display: inline-block;
     width: 100%; /* Ajusta a seção para ocupar toda a largura */
 }
-
-#textbreak {
-
 #textbreak {
     display: flex;
     justify-content: space-between; /* Alinha o texto e a imagem horizontalmente */
@@ -186,4 +183,3 @@ h4 {
 p {
     margin: 0;
   }
-}
